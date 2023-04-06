@@ -1,0 +1,202 @@
+\hypertarget{class_enemy}{}\doxysection{Enemy Class Reference}
+\label{class_enemy}\index{Enemy@{Enemy}}
+
+
+Directive \mbox{\hyperlink{class_enemy}{Enemy}} class holds the object class for the enemy has movement, health, position, and size of enemy enemy can move around like player.  
+
+
+
+
+{\ttfamily \#include $<$enemy.\+hpp$>$}
+
+Inheritance diagram for Enemy\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_enemy}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_enemy_a94f30d348b6d2840fd71675472ba38dd}{Enemy}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_enemy}{Enemy}} class holds the object class for the enemy has movement, health, position, and size of enemy enemy can move around like player. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_enemy_ac0eec4755e28c02688065f9657150ac3}\label{class_enemy_ac0eec4755e28c02688065f9657150ac3}} 
+{\bfseries $\sim$\+Enemy} ()
+\begin{DoxyCompactList}\small\item\em destroy enemy using deconstructor \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_enemy_a6846fae160030ff2b3241e738a9259d0}{get\+Radius}} ()
+\begin{DoxyCompactList}\small\item\em Get radius of the enemy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_a0e8dd075da30c25e793a6088fdd12671}{set\+Radius}} (float new\+Rad)
+\begin{DoxyCompactList}\small\item\em Set radius of the enemy. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_enemy_a9a398f8d12234f02563b27440aff7891}\label{class_enemy_a9a398f8d12234f02563b27440aff7891}} 
+void {\bfseries move} ()
+\begin{DoxyCompactList}\small\item\em Move the enemy coordinates based on the current velocity, do wall collison if needed. \end{DoxyCompactList}\item 
+raylib\+::\+Vector2 \mbox{\hyperlink{class_enemy_a0a5353ebc87926f89983c6bbcc2298ad}{get\+Position}} ()
+\begin{DoxyCompactList}\small\item\em get Position of the enemy \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_a48f9331e93449f27c8d6374c75c81363}{set\+Health}} (int health)
+\begin{DoxyCompactList}\small\item\em set health of the enemy \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_enemy_a46341636350ca2bc6aac929b2a84f215}{get\+Health}} ()
+\begin{DoxyCompactList}\small\item\em get health of the enemy \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_enemy_a54b86d2ee04c3b6cd8f5886bc6430956}\label{class_enemy_a54b86d2ee04c3b6cd8f5886bc6430956}} 
+void {\bfseries add\+Revive\+Count} ()
+\begin{DoxyCompactList}\small\item\em add to revive count for enemy, so that they can respawn \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_enemy_a58686bf9212ba392033412dbf760769f}{get\+Revive\+Count}} ()
+\begin{DoxyCompactList}\small\item\em get revive count for enemy \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_space_object}{Space\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_space_object_ada1c7e18d754a1b5d3aed74728eb9ae1}{Space\+Object}} ()
+\begin{DoxyCompactList}\small\item\em spaceobject holds a basic space class for any object that flies in space setups health position and velocity of each object \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_space_object_a60676c3b81a05900eab791eefde444cc}\label{class_space_object_a60676c3b81a05900eab791eefde444cc}} 
+{\bfseries $\sim$\+Space\+Object} ()
+\begin{DoxyCompactList}\small\item\em Deconstructor for spaceobject destroys any unwanted objects. \end{DoxyCompactList}\item 
+raylib\+::\+Vector2 \mbox{\hyperlink{class_space_object_a4cbcbdd7f6c965ca8de1ff132d3396e2}{get\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Get position of spaceobject. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_space_object_abea30fb522c900153cfc16bd69414459}{set\+Position}} (raylib\+::\+Vector2 new\+Pos)
+\begin{DoxyCompactList}\small\item\em Set position of spaceobject set the new position spaceobject. \end{DoxyCompactList}\item 
+raylib\+::\+Vector2 \mbox{\hyperlink{class_space_object_a6bd8e42f754076155862a05815170ba0}{get\+Velocity}} ()
+\begin{DoxyCompactList}\small\item\em Set position of spaceobject set the new position spaceobject. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_space_object_a696fcc3c14034aeecd1be8c127918b43}{set\+Velocity}} (raylib\+::\+Vector2 new\+Vel)
+\begin{DoxyCompactList}\small\item\em Set velocity of spaceobject set the new velocity spaceobject. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_space_object_a7ced2807195c7a870c7bcc821b282e0c}{get\+Health}} ()
+\begin{DoxyCompactList}\small\item\em get health of spaceobject return the health value of the space object \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_space_object_a0387461bb468290ee2ef1bd286fc1aee}{set\+Health}} (int modifier)
+\begin{DoxyCompactList}\small\item\em set health of spaceobject set a new health value of the space object \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_space_object_a56957b149f08c2f255ff21e4f0ffe4fd}\label{class_space_object_a56957b149f08c2f255ff21e4f0ffe4fd}} 
+void {\bfseries move} ()
+\begin{DoxyCompactList}\small\item\em move the spaceobject based on velocity change the space objects position based on the velocity, and update its location \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_enemy_ada3c1a04b0e59cff45e83c4d86f6d76a}\label{class_enemy_ada3c1a04b0e59cff45e83c4d86f6d76a}} 
+float {\bfseries radius}
+\item 
+\mbox{\Hypertarget{class_enemy_a2c1a289c7e490b4de628e7cda5b06995}\label{class_enemy_a2c1a289c7e490b4de628e7cda5b06995}} 
+int {\bfseries revive\+Count}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_space_object}{Space\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_space_object_a14d915fef6d25bef2e76d7ef4d629204}\label{class_space_object_a14d915fef6d25bef2e76d7ef4d629204}} 
+raylib\+::\+Vector2 {\bfseries position}
+\item 
+\mbox{\Hypertarget{class_space_object_ad28d4f4b224c0edcdab81f13134623d6}\label{class_space_object_ad28d4f4b224c0edcdab81f13134623d6}} 
+raylib\+::\+Vector2 {\bfseries velocity}
+\item 
+\mbox{\Hypertarget{class_space_object_a071f09b489a140164862480ef828a056}\label{class_space_object_a071f09b489a140164862480ef828a056}} 
+int {\bfseries health}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Directive \mbox{\hyperlink{class_enemy}{Enemy}} class holds the object class for the enemy has movement, health, position, and size of enemy enemy can move around like player. 
+
+\begin{DoxyAuthor}{Authors}
+Gurshawn Lehal, Imesh Nimsitha, Gunveer Vilkhu 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_enemy_a94f30d348b6d2840fd71675472ba38dd}\label{class_enemy_a94f30d348b6d2840fd71675472ba38dd}} 
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{Enemy()}{Enemy()}}
+{\footnotesize\ttfamily Enemy\+::\+Enemy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_enemy}{Enemy}} class holds the object class for the enemy has movement, health, position, and size of enemy enemy can move around like player. 
+
+\begin{DoxyAuthor}{Authors}
+Gurshawn Lehal, Imesh Nimsitha, Gunveer Vilkhu
+\end{DoxyAuthor}
+Create enemy using constructor set defualt value of the enemy 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_enemy_a46341636350ca2bc6aac929b2a84f215}\label{class_enemy_a46341636350ca2bc6aac929b2a84f215}} 
+\index{Enemy@{Enemy}!getHealth@{getHealth}}
+\index{getHealth@{getHealth}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{getHealth()}{getHealth()}}
+{\footnotesize\ttfamily int Enemy\+::get\+Health (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get health of the enemy 
+
+\begin{DoxyReturn}{Returns}
+health of the enemy 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_enemy_a0a5353ebc87926f89983c6bbcc2298ad}\label{class_enemy_a0a5353ebc87926f89983c6bbcc2298ad}} 
+\index{Enemy@{Enemy}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily raylib\+::\+Vector2 Enemy\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get Position of the enemy 
+
+\begin{DoxyReturn}{Returns}
+Vector2 vector of the enemy 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_enemy_a6846fae160030ff2b3241e738a9259d0}\label{class_enemy_a6846fae160030ff2b3241e738a9259d0}} 
+\index{Enemy@{Enemy}!getRadius@{getRadius}}
+\index{getRadius@{getRadius}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{getRadius()}{getRadius()}}
+{\footnotesize\ttfamily float Enemy\+::get\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get radius of the enemy. 
+
+\begin{DoxyReturn}{Returns}
+float of the radius of enenmy 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_enemy_a58686bf9212ba392033412dbf760769f}\label{class_enemy_a58686bf9212ba392033412dbf760769f}} 
+\index{Enemy@{Enemy}!getReviveCount@{getReviveCount}}
+\index{getReviveCount@{getReviveCount}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{getReviveCount()}{getReviveCount()}}
+{\footnotesize\ttfamily int Enemy\+::get\+Revive\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get revive count for enemy 
+
+\begin{DoxyReturn}{Returns}
+int the current count of the revive count 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_enemy_a48f9331e93449f27c8d6374c75c81363}\label{class_enemy_a48f9331e93449f27c8d6374c75c81363}} 
+\index{Enemy@{Enemy}!setHealth@{setHealth}}
+\index{setHealth@{setHealth}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{setHealth()}{setHealth()}}
+{\footnotesize\ttfamily void Enemy\+::set\+Health (\begin{DoxyParamCaption}\item[{int}]{health }\end{DoxyParamCaption})}
+
+
+
+set health of the enemy 
+
+
+\begin{DoxyParams}{Parameters}
+{\em health} & new health of the enemy \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_enemy_a0e8dd075da30c25e793a6088fdd12671}\label{class_enemy_a0e8dd075da30c25e793a6088fdd12671}} 
+\index{Enemy@{Enemy}!setRadius@{setRadius}}
+\index{setRadius@{setRadius}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{setRadius()}{setRadius()}}
+{\footnotesize\ttfamily void Enemy\+::set\+Radius (\begin{DoxyParamCaption}\item[{float}]{new\+Rad }\end{DoxyParamCaption})}
+
+
+
+Set radius of the enemy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em float} & of the radius of enenmy \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/enemies/enemy.\+hpp\item 
+src/enemies/enemy.\+cpp\end{DoxyCompactItemize}

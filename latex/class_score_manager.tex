@@ -1,0 +1,202 @@
+\hypertarget{class_score_manager}{}\doxysection{Score\+Manager Class Reference}
+\label{class_score_manager}\index{ScoreManager@{ScoreManager}}
+
+
+directive score manager keeps an object to track the score of the game the score is initalized and cna be updated based on \# of frames  
+
+
+
+
+{\ttfamily \#include $<$scoremanager.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_score_manager_a4f3866ff832127664543349da5c4fbf4}{Score\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em score manager keeps an object to track the score of the game the score is initalized and cna be updated based on \# of frames \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_score_manager_aed0eff96b9869439fdcd129dde9afd8a}\label{class_score_manager_aed0eff96b9869439fdcd129dde9afd8a}} 
+{\bfseries $\sim$\+Score\+Manager} ()
+\begin{DoxyCompactList}\small\item\em deconstructor object for the score manager cleans up any objects to be destroyed \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_score_manager_a366386bd5bd4f13647844b5490a1eceb}{get\+Score}} ()
+\begin{DoxyCompactList}\small\item\em get\+Score grabs the score value of the object and returns it \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_score_manager_af3c88df3a63cd137dd51622ab89667d0}{set\+Score}} (int modifier)
+\begin{DoxyCompactList}\small\item\em set Score adds a value to current score and updates it \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_score_manager_af4dc9a649f37d87f9fc678e8e413d7e7}{get\+High\+Score}} ()
+\begin{DoxyCompactList}\small\item\em get\+Highscore returns the highscore of the game so far \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_score_manager_a8364e2801f4e018696a4ee48841181d1}{set\+High\+Score}} (int new\+High)
+\begin{DoxyCompactList}\small\item\em set Score adds a value to current highscore and updates it \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_score_manager_aff12ebcfdc9937015265b7e7ad49c62b}{get\+Frames}} ()
+\begin{DoxyCompactList}\small\item\em get frames get the frame settings in the game \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_score_manager_a825fbbc1cfd628f268934c0e5b365ccd}{set\+Frames}} (int modifier)
+\begin{DoxyCompactList}\small\item\em set frames for the game, updates based on current frames \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_score_manager_aef3e328a1580a4763d3b04d888e85706}{load}} (int position)
+\begin{DoxyCompactList}\small\item\em load, loads the score manager to its intial state \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_score_manager_a09232ecc8cb6019d0a7e2a694ac657a8}{save}} (int position, int value)
+\begin{DoxyCompactList}\small\item\em saves the score at the position located \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_score_manager_a589f01648b6d8650001421720ceec3ce}\label{class_score_manager_a589f01648b6d8650001421720ceec3ce}} 
+int {\bfseries score}
+\item 
+\mbox{\Hypertarget{class_score_manager_ab1d9918ce5577876323701cf3f2f6516}\label{class_score_manager_ab1d9918ce5577876323701cf3f2f6516}} 
+int {\bfseries high\+Score}
+\item 
+\mbox{\Hypertarget{class_score_manager_a83672542d3171c6e7bfa8f79374f5d89}\label{class_score_manager_a83672542d3171c6e7bfa8f79374f5d89}} 
+int {\bfseries frames}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+directive score manager keeps an object to track the score of the game the score is initalized and cna be updated based on \# of frames 
+
+\begin{DoxyAuthor}{Authors}
+Gurshawn Lehal, Imesh Nimsitha, Gunveer Vilkhu 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_score_manager_a4f3866ff832127664543349da5c4fbf4}\label{class_score_manager_a4f3866ff832127664543349da5c4fbf4}} 
+\index{ScoreManager@{ScoreManager}!ScoreManager@{ScoreManager}}
+\index{ScoreManager@{ScoreManager}!ScoreManager@{ScoreManager}}
+\doxysubsubsection{\texorpdfstring{ScoreManager()}{ScoreManager()}}
+{\footnotesize\ttfamily Score\+Manager\+::\+Score\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+score manager keeps an object to track the score of the game the score is initalized and cna be updated based on \# of frames 
+
+\begin{DoxyAuthor}{Authors}
+Gurshawn Lehal, Imesh Nimsitha, Gunveer Vilkhu
+\end{DoxyAuthor}
+Constructor object for the score manager creates the object and initalizes score to 0, and loads highscore 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_score_manager_aff12ebcfdc9937015265b7e7ad49c62b}\label{class_score_manager_aff12ebcfdc9937015265b7e7ad49c62b}} 
+\index{ScoreManager@{ScoreManager}!getFrames@{getFrames}}
+\index{getFrames@{getFrames}!ScoreManager@{ScoreManager}}
+\doxysubsubsection{\texorpdfstring{getFrames()}{getFrames()}}
+{\footnotesize\ttfamily int Score\+Manager\+::get\+Frames (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get frames get the frame settings in the game 
+
+\begin{DoxyReturn}{Returns}
+int the \# of frames 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_score_manager_af4dc9a649f37d87f9fc678e8e413d7e7}\label{class_score_manager_af4dc9a649f37d87f9fc678e8e413d7e7}} 
+\index{ScoreManager@{ScoreManager}!getHighScore@{getHighScore}}
+\index{getHighScore@{getHighScore}!ScoreManager@{ScoreManager}}
+\doxysubsubsection{\texorpdfstring{getHighScore()}{getHighScore()}}
+{\footnotesize\ttfamily int Score\+Manager\+::get\+High\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Highscore returns the highscore of the game so far 
+
+\begin{DoxyReturn}{Returns}
+int the int value of the highscore 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_score_manager_a366386bd5bd4f13647844b5490a1eceb}\label{class_score_manager_a366386bd5bd4f13647844b5490a1eceb}} 
+\index{ScoreManager@{ScoreManager}!getScore@{getScore}}
+\index{getScore@{getScore}!ScoreManager@{ScoreManager}}
+\doxysubsubsection{\texorpdfstring{getScore()}{getScore()}}
+{\footnotesize\ttfamily int Score\+Manager\+::get\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Score grabs the score value of the object and returns it 
+
+\begin{DoxyReturn}{Returns}
+the int value of the score 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_score_manager_aef3e328a1580a4763d3b04d888e85706}\label{class_score_manager_aef3e328a1580a4763d3b04d888e85706}} 
+\index{ScoreManager@{ScoreManager}!load@{load}}
+\index{load@{load}!ScoreManager@{ScoreManager}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily int Score\+Manager\+::load (\begin{DoxyParamCaption}\item[{int}]{position }\end{DoxyParamCaption})}
+
+
+
+load, loads the score manager to its intial state 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & the value to look for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int, the value of the file located at position 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_score_manager_a09232ecc8cb6019d0a7e2a694ac657a8}\label{class_score_manager_a09232ecc8cb6019d0a7e2a694ac657a8}} 
+\index{ScoreManager@{ScoreManager}!save@{save}}
+\index{save@{save}!ScoreManager@{ScoreManager}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily bool Score\+Manager\+::save (\begin{DoxyParamCaption}\item[{int}]{position,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+saves the score at the position located 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & the area to be saved to \\
+\hline
+{\em value} & the value to be saved at the position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+successful save 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_score_manager_a825fbbc1cfd628f268934c0e5b365ccd}\label{class_score_manager_a825fbbc1cfd628f268934c0e5b365ccd}} 
+\index{ScoreManager@{ScoreManager}!setFrames@{setFrames}}
+\index{setFrames@{setFrames}!ScoreManager@{ScoreManager}}
+\doxysubsubsection{\texorpdfstring{setFrames()}{setFrames()}}
+{\footnotesize\ttfamily void Score\+Manager\+::set\+Frames (\begin{DoxyParamCaption}\item[{int}]{modifier }\end{DoxyParamCaption})}
+
+
+
+set frames for the game, updates based on current frames 
+
+
+\begin{DoxyParams}{Parameters}
+{\em modifier} & the \# of frames to be set \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_score_manager_a8364e2801f4e018696a4ee48841181d1}\label{class_score_manager_a8364e2801f4e018696a4ee48841181d1}} 
+\index{ScoreManager@{ScoreManager}!setHighScore@{setHighScore}}
+\index{setHighScore@{setHighScore}!ScoreManager@{ScoreManager}}
+\doxysubsubsection{\texorpdfstring{setHighScore()}{setHighScore()}}
+{\footnotesize\ttfamily void Score\+Manager\+::set\+High\+Score (\begin{DoxyParamCaption}\item[{int}]{new\+High }\end{DoxyParamCaption})}
+
+
+
+set Score adds a value to current highscore and updates it 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+High} & the value to be set for the highscore \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_score_manager_af3c88df3a63cd137dd51622ab89667d0}\label{class_score_manager_af3c88df3a63cd137dd51622ab89667d0}} 
+\index{ScoreManager@{ScoreManager}!setScore@{setScore}}
+\index{setScore@{setScore}!ScoreManager@{ScoreManager}}
+\doxysubsubsection{\texorpdfstring{setScore()}{setScore()}}
+{\footnotesize\ttfamily void Score\+Manager\+::set\+Score (\begin{DoxyParamCaption}\item[{int}]{modifier }\end{DoxyParamCaption})}
+
+
+
+set Score adds a value to current score and updates it 
+
+
+\begin{DoxyParams}{Parameters}
+{\em modifer} & the value to be set for the score \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/scoremanager.\+hpp\item 
+src/scoremanager.\+cpp\end{DoxyCompactItemize}

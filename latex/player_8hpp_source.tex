@@ -1,0 +1,47 @@
+\hypertarget{player_8hpp_source}{}\doxysection{player.\+hpp}
+\label{player_8hpp_source}\index{src/player.hpp@{src/player.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ PLAYER\_H}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ PLAYER\_H}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <raylib-\/cpp.hpp>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}spaceobject.hpp"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}constants.hpp"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}weapons/weapon.hpp"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}soundmanager.hpp"{}}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_player}{Player}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_space_object}{SpaceObject}}}
+\DoxyCodeLine{00017\ \{}
+\DoxyCodeLine{00018\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{float}\ direction;}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{float}\ accel;}
+\DoxyCodeLine{00021\ \ \ \ \ raylib::Vector3\ collide;}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{float}\ height;}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{int}\ health;}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_weapon}{Weapon}}\ gun;}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{bool}\ isBigActive;}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}{Player}}();}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_player_a749d2c00e1fe0f5c2746f7505a58c062}{\string~Player}}();}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_player_a18d2a1396b5765fb39ddca54ccd65372}{getDirection}}();}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_a53986447e90a32d437243ae2726d0d9c}{setDirection}}(\textcolor{keywordtype}{float}\ newDir);}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_player_ac280034e3838772ae606dbd2d28cd66c}{getAcceleration}}();}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_ac9df7f6554a3d8f763be56622ff28e8a}{setAcceleration}}(\textcolor{keywordtype}{float}\ newAcc);}
+\DoxyCodeLine{00034\ \ \ \ \ raylib::Vector3\ \mbox{\hyperlink{class_player_a189bf2e6a885df1296bac8675e672e2d}{getCollide}}();}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_a051a2d77aa4db9940dbb3c1eedfa38f1}{setCollide}}(raylib::Vector3\ newCol);}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_player_a8e777167e38b307136f1fbd4e32f0797}{getHeight}}();}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_afa64f10bb2a8a5f88d2c44b715c907bc}{setHeight}}(\textcolor{keywordtype}{float}\ newH);}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_ae02ee46d8c20dd0697b975f935b09839}{move}}();}
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{class_weapon}{Weapon}}\ \mbox{\hyperlink{class_player_a027f3ad83cc4ecd637520520d24b056d}{getWeapon}}();}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_a25272c0cbf9a94d8259e3b01151cb32d}{setWeaponUnactive}}();}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_player_ad7c64c5281e10e027f86555df0d74a47}{checkIfBigActive}}();}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_a1f3cd91de9d0385904cc3af9e0bcfc5c}{activateBigWeapon}}();}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_a5724c03c355df7526d3cd98b8c252f9c}{deactivateBigWeapon}}();}
+\DoxyCodeLine{00044\ \};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

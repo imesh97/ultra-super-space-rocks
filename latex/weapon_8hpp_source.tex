@@ -1,0 +1,44 @@
+\hypertarget{weapon_8hpp_source}{}\doxysection{weapon.\+hpp}
+\label{weapon_8hpp_source}\index{src/weapons/weapon.hpp@{src/weapons/weapon.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ WEAPON\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ WEAPON\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <raylib-\/cpp.hpp>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}../constants.hpp"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}../soundmanager.hpp"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_weapon}{Weapon}}}
+\DoxyCodeLine{00015\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00017\ \ \ \ \ raylib::Vector2\ position;}
+\DoxyCodeLine{00018\ \ \ \ \ raylib::Vector2\ velocity;}
+\DoxyCodeLine{00019\ \ \ \ \ std::string\ name;}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{int}\ damage;}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{int}\ frequency;}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{bool}\ freqCoolDown;}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{bool}\ active;}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{float}\ radius;}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{int}\ distance;}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{int}\ Multipier;}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_weapon_a42dbc46dd70319a24763992c4ebbd396}{Weapon}}();\ \textcolor{comment}{//\ set\ maxAmmo\ to\ 0\ or\ negative\ for\ infinite\ ammo}}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{class_weapon_a420e7ba3d2017e6de3e93eb579cfd3fa}{\string~Weapon}}();}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_weapon_a1a0c6e43de56a14805066fd77b147c53}{shoot}}(\textcolor{keywordtype}{int}\ direction,\ \textcolor{keywordtype}{float}\ Height,\ Vector2\ playerPos);}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_weapon_a01077c5db4c296318bbcad631c3a324a}{isActive}}();}
+\DoxyCodeLine{00033\ \ \ \ \ raylib::Vector2\ \mbox{\hyperlink{class_weapon_a3e6ce160628898864b1bbcd09637f17a}{getPosition}}();}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_weapon_ad8464189363e4b8015997ba5d0919037}{movePosition}}();}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_weapon_aba330ea25a7097f508bc66706e0b657e}{getRadius}}();}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_weapon_a7f770125b7a86f84095eb2f28f668ae7}{setUnactive}}();}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_weapon_a19dbeaf6f535354dba50ee1ac3318804}{getDamage}}();}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_weapon_acbc75fad3cebe1e5b76051048afd3c2b}{setMult}}(\textcolor{keywordtype}{int}\ i);}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_weapon_a1a6fff9d58cdeade11007e4f7aecdf18}{setRadius}}(\textcolor{keywordtype}{float}\ i);}
+\DoxyCodeLine{00040\ \};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

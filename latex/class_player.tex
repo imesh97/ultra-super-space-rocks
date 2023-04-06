@@ -1,0 +1,297 @@
+\hypertarget{class_player}{}\doxysection{Player Class Reference}
+\label{class_player}\index{Player@{Player}}
+
+
+directive player creates the player object and allows the setup of movement and other aspects the score is initalized and cna be updated based on \# of frames  
+
+
+
+
+{\ttfamily \#include $<$player.\+hpp$>$}
+
+Inheritance diagram for Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_player}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}{Player}} ()
+\begin{DoxyCompactList}\small\item\em player class holds the player object creates the positon, velocity, direction, acceleration, collision, and health/radius of the object \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_player_a749d2c00e1fe0f5c2746f7505a58c062}{$\sim$\+Player}} ()
+\begin{DoxyCompactList}\small\item\em deallocates player values \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_player_a18d2a1396b5765fb39ddca54ccd65372}{get\+Direction}} ()
+\begin{DoxyCompactList}\small\item\em captures players direction \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a53986447e90a32d437243ae2726d0d9c}{set\+Direction}} (float new\+Dir)
+\begin{DoxyCompactList}\small\item\em sets players direction \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_player_ac280034e3838772ae606dbd2d28cd66c}{get\+Acceleration}} ()
+\begin{DoxyCompactList}\small\item\em captures players acceleration \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_ac9df7f6554a3d8f763be56622ff28e8a}{set\+Acceleration}} (float new\+Acc)
+\begin{DoxyCompactList}\small\item\em set players acceleration \end{DoxyCompactList}\item 
+raylib\+::\+Vector3 \mbox{\hyperlink{class_player_a189bf2e6a885df1296bac8675e672e2d}{get\+Collide}} ()
+\begin{DoxyCompactList}\small\item\em captures players collision \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a051a2d77aa4db9940dbb3c1eedfa38f1}{set\+Collide}} (raylib\+::\+Vector3 new\+Col)
+\begin{DoxyCompactList}\small\item\em set players collision \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_player_a8e777167e38b307136f1fbd4e32f0797}{get\+Height}} ()
+\begin{DoxyCompactList}\small\item\em captures players height \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_afa64f10bb2a8a5f88d2c44b715c907bc}{set\+Height}} (float newH)
+\begin{DoxyCompactList}\small\item\em set players height \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_ae02ee46d8c20dd0697b975f935b09839}\label{class_player_ae02ee46d8c20dd0697b975f935b09839}} 
+void {\bfseries move} ()
+\begin{DoxyCompactList}\small\item\em move player based on keyboard input, edit if wall collision speed up and slow down player if needed \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_weapon}{Weapon}} \mbox{\hyperlink{class_player_a027f3ad83cc4ecd637520520d24b056d}{get\+Weapon}} ()
+\begin{DoxyCompactList}\small\item\em return the weapon class \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_a25272c0cbf9a94d8259e3b01151cb32d}\label{class_player_a25272c0cbf9a94d8259e3b01151cb32d}} 
+void {\bfseries set\+Weapon\+Unactive} ()
+\begin{DoxyCompactList}\small\item\em set the weapon to unactive when weapon is done, it is unactive, calls the weapon method \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_player_ad7c64c5281e10e027f86555df0d74a47}{check\+If\+Big\+Active}} ()
+\begin{DoxyCompactList}\small\item\em check if big weapon is active \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_a1f3cd91de9d0385904cc3af9e0bcfc5c}\label{class_player_a1f3cd91de9d0385904cc3af9e0bcfc5c}} 
+void {\bfseries activate\+Big\+Weapon} ()
+\begin{DoxyCompactList}\small\item\em set big weapon active Set the big weapon to active, and updates values in weapon class \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_a5724c03c355df7526d3cd98b8c252f9c}\label{class_player_a5724c03c355df7526d3cd98b8c252f9c}} 
+void {\bfseries deactivate\+Big\+Weapon} ()
+\begin{DoxyCompactList}\small\item\em reset weapon class reset from the big weapon to unactive, and updates values in weapon class \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_space_object}{Space\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_space_object_ada1c7e18d754a1b5d3aed74728eb9ae1}{Space\+Object}} ()
+\begin{DoxyCompactList}\small\item\em spaceobject holds a basic space class for any object that flies in space setups health position and velocity of each object \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_space_object_a60676c3b81a05900eab791eefde444cc}\label{class_space_object_a60676c3b81a05900eab791eefde444cc}} 
+{\bfseries $\sim$\+Space\+Object} ()
+\begin{DoxyCompactList}\small\item\em Deconstructor for spaceobject destroys any unwanted objects. \end{DoxyCompactList}\item 
+raylib\+::\+Vector2 \mbox{\hyperlink{class_space_object_a4cbcbdd7f6c965ca8de1ff132d3396e2}{get\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Get position of spaceobject. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_space_object_abea30fb522c900153cfc16bd69414459}{set\+Position}} (raylib\+::\+Vector2 new\+Pos)
+\begin{DoxyCompactList}\small\item\em Set position of spaceobject set the new position spaceobject. \end{DoxyCompactList}\item 
+raylib\+::\+Vector2 \mbox{\hyperlink{class_space_object_a6bd8e42f754076155862a05815170ba0}{get\+Velocity}} ()
+\begin{DoxyCompactList}\small\item\em Set position of spaceobject set the new position spaceobject. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_space_object_a696fcc3c14034aeecd1be8c127918b43}{set\+Velocity}} (raylib\+::\+Vector2 new\+Vel)
+\begin{DoxyCompactList}\small\item\em Set velocity of spaceobject set the new velocity spaceobject. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_space_object_a7ced2807195c7a870c7bcc821b282e0c}{get\+Health}} ()
+\begin{DoxyCompactList}\small\item\em get health of spaceobject return the health value of the space object \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_space_object_a0387461bb468290ee2ef1bd286fc1aee}{set\+Health}} (int modifier)
+\begin{DoxyCompactList}\small\item\em set health of spaceobject set a new health value of the space object \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_space_object_a56957b149f08c2f255ff21e4f0ffe4fd}\label{class_space_object_a56957b149f08c2f255ff21e4f0ffe4fd}} 
+void {\bfseries move} ()
+\begin{DoxyCompactList}\small\item\em move the spaceobject based on velocity change the space objects position based on the velocity, and update its location \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_player_afd92b06d836a47e473f79afc28e79514}\label{class_player_afd92b06d836a47e473f79afc28e79514}} 
+float {\bfseries direction}
+\item 
+\mbox{\Hypertarget{class_player_abb3e84443b30bf3ddddef2ce88e16545}\label{class_player_abb3e84443b30bf3ddddef2ce88e16545}} 
+float {\bfseries accel}
+\item 
+\mbox{\Hypertarget{class_player_a55790b33454f8cb9da7921635d9be1da}\label{class_player_a55790b33454f8cb9da7921635d9be1da}} 
+raylib\+::\+Vector3 {\bfseries collide}
+\item 
+\mbox{\Hypertarget{class_player_a1470344c20073c3a20b3700d1d638f07}\label{class_player_a1470344c20073c3a20b3700d1d638f07}} 
+float {\bfseries height}
+\item 
+\mbox{\Hypertarget{class_player_aad33b52bfe73c4c978a3135172f286a0}\label{class_player_aad33b52bfe73c4c978a3135172f286a0}} 
+int {\bfseries health}
+\item 
+\mbox{\Hypertarget{class_player_afa1679003a377e28e4721dd3b5f2a17f}\label{class_player_afa1679003a377e28e4721dd3b5f2a17f}} 
+\mbox{\hyperlink{class_weapon}{Weapon}} {\bfseries gun}
+\item 
+\mbox{\Hypertarget{class_player_a02c299dffd8a567dcb5550c494d42323}\label{class_player_a02c299dffd8a567dcb5550c494d42323}} 
+bool {\bfseries is\+Big\+Active}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_space_object}{Space\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_space_object_a14d915fef6d25bef2e76d7ef4d629204}\label{class_space_object_a14d915fef6d25bef2e76d7ef4d629204}} 
+raylib\+::\+Vector2 {\bfseries position}
+\item 
+\mbox{\Hypertarget{class_space_object_ad28d4f4b224c0edcdab81f13134623d6}\label{class_space_object_ad28d4f4b224c0edcdab81f13134623d6}} 
+raylib\+::\+Vector2 {\bfseries velocity}
+\item 
+\mbox{\Hypertarget{class_space_object_a071f09b489a140164862480ef828a056}\label{class_space_object_a071f09b489a140164862480ef828a056}} 
+int {\bfseries health}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+directive player creates the player object and allows the setup of movement and other aspects the score is initalized and cna be updated based on \# of frames 
+
+\begin{DoxyAuthor}{Authors}
+Gurshawn Lehal, Imesh Nimsitha, Gunveer Vilkhu 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}\label{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}} 
+\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}}
+{\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+player class holds the player object creates the positon, velocity, direction, acceleration, collision, and health/radius of the object 
+
+\begin{DoxyAuthor}{Authors}
+Gurshawn Lehal, Imesh Nimsitha, Gunveer Vilkhu
+\end{DoxyAuthor}
+player constructor initalizes the values of all variables to their default value \mbox{\Hypertarget{class_player_a749d2c00e1fe0f5c2746f7505a58c062}\label{class_player_a749d2c00e1fe0f5c2746f7505a58c062}} 
+\index{Player@{Player}!````~Player@{$\sim$Player}}
+\index{````~Player@{$\sim$Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{$\sim$Player()}{~Player()}}
+{\footnotesize\ttfamily Player\+::$\sim$\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+deallocates player values 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_player_ad7c64c5281e10e027f86555df0d74a47}\label{class_player_ad7c64c5281e10e027f86555df0d74a47}} 
+\index{Player@{Player}!checkIfBigActive@{checkIfBigActive}}
+\index{checkIfBigActive@{checkIfBigActive}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{checkIfBigActive()}{checkIfBigActive()}}
+{\footnotesize\ttfamily bool Player\+::check\+If\+Big\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+check if big weapon is active 
+
+\begin{DoxyReturn}{Returns}
+bool, True if the big weapon upgrade is currently active 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_ac280034e3838772ae606dbd2d28cd66c}\label{class_player_ac280034e3838772ae606dbd2d28cd66c}} 
+\index{Player@{Player}!getAcceleration@{getAcceleration}}
+\index{getAcceleration@{getAcceleration}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getAcceleration()}{getAcceleration()}}
+{\footnotesize\ttfamily float Player\+::get\+Acceleration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+captures players acceleration 
+
+\begin{DoxyReturn}{Returns}
+float of player\textquotesingle{}s acceleration 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_a189bf2e6a885df1296bac8675e672e2d}\label{class_player_a189bf2e6a885df1296bac8675e672e2d}} 
+\index{Player@{Player}!getCollide@{getCollide}}
+\index{getCollide@{getCollide}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getCollide()}{getCollide()}}
+{\footnotesize\ttfamily raylib\+::\+Vector3 Player\+::get\+Collide (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+captures players collision 
+
+\begin{DoxyReturn}{Returns}
+vector3 of player\textquotesingle{}s collision 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_a18d2a1396b5765fb39ddca54ccd65372}\label{class_player_a18d2a1396b5765fb39ddca54ccd65372}} 
+\index{Player@{Player}!getDirection@{getDirection}}
+\index{getDirection@{getDirection}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getDirection()}{getDirection()}}
+{\footnotesize\ttfamily float Player\+::get\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+captures players direction 
+
+\begin{DoxyReturn}{Returns}
+float of player\textquotesingle{}s direction 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_a8e777167e38b307136f1fbd4e32f0797}\label{class_player_a8e777167e38b307136f1fbd4e32f0797}} 
+\index{Player@{Player}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily float Player\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+captures players height 
+
+\begin{DoxyReturn}{Returns}
+float of player\textquotesingle{}s height 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_a027f3ad83cc4ecd637520520d24b056d}\label{class_player_a027f3ad83cc4ecd637520520d24b056d}} 
+\index{Player@{Player}!getWeapon@{getWeapon}}
+\index{getWeapon@{getWeapon}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getWeapon()}{getWeapon()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_weapon}{Weapon}} Player\+::get\+Weapon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+return the weapon class 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_weapon}{Weapon}}, this-\/\texorpdfstring{$>$}{>}gun is the weapon used 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_ac9df7f6554a3d8f763be56622ff28e8a}\label{class_player_ac9df7f6554a3d8f763be56622ff28e8a}} 
+\index{Player@{Player}!setAcceleration@{setAcceleration}}
+\index{setAcceleration@{setAcceleration}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{setAcceleration()}{setAcceleration()}}
+{\footnotesize\ttfamily void Player\+::set\+Acceleration (\begin{DoxyParamCaption}\item[{float}]{new\+Acc }\end{DoxyParamCaption})}
+
+
+
+set players acceleration 
+
+
+\begin{DoxyParams}{Parameters}
+{\em float} & of player\textquotesingle{}s acceleration \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_a051a2d77aa4db9940dbb3c1eedfa38f1}\label{class_player_a051a2d77aa4db9940dbb3c1eedfa38f1}} 
+\index{Player@{Player}!setCollide@{setCollide}}
+\index{setCollide@{setCollide}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{setCollide()}{setCollide()}}
+{\footnotesize\ttfamily void Player\+::set\+Collide (\begin{DoxyParamCaption}\item[{raylib\+::\+Vector3}]{new\+Col }\end{DoxyParamCaption})}
+
+
+
+set players collision 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector3} & of player\textquotesingle{}s collision \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_a53986447e90a32d437243ae2726d0d9c}\label{class_player_a53986447e90a32d437243ae2726d0d9c}} 
+\index{Player@{Player}!setDirection@{setDirection}}
+\index{setDirection@{setDirection}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{setDirection()}{setDirection()}}
+{\footnotesize\ttfamily void Player\+::set\+Direction (\begin{DoxyParamCaption}\item[{float}]{new\+Dir }\end{DoxyParamCaption})}
+
+
+
+sets players direction 
+
+
+\begin{DoxyParams}{Parameters}
+{\em float} & of player\textquotesingle{}s direction \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_afa64f10bb2a8a5f88d2c44b715c907bc}\label{class_player_afa64f10bb2a8a5f88d2c44b715c907bc}} 
+\index{Player@{Player}!setHeight@{setHeight}}
+\index{setHeight@{setHeight}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{setHeight()}{setHeight()}}
+{\footnotesize\ttfamily void Player\+::set\+Height (\begin{DoxyParamCaption}\item[{float}]{newH }\end{DoxyParamCaption})}
+
+
+
+set players height 
+
+
+\begin{DoxyParams}{Parameters}
+{\em float} & of player\textquotesingle{}s height \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/player.\+hpp\item 
+src/player.\+cpp\end{DoxyCompactItemize}

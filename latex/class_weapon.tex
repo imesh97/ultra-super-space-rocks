@@ -1,0 +1,217 @@
+\hypertarget{class_weapon}{}\doxysection{Weapon Class Reference}
+\label{class_weapon}\index{Weapon@{Weapon}}
+
+
+Header File of the weapon class.  
+
+
+
+
+{\ttfamily \#include $<$weapon.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_weapon_a42dbc46dd70319a24763992c4ebbd396}{Weapon}} ()
+\begin{DoxyCompactList}\small\item\em The weapon class is made to be extended into various melee and ranged weapons it is in charge of holding the weapons properties \+: name, damage, ammunition and frequency. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_weapon_a420e7ba3d2017e6de3e93eb579cfd3fa}\label{class_weapon_a420e7ba3d2017e6de3e93eb579cfd3fa}} 
+{\bfseries $\sim$\+Weapon} ()
+\begin{DoxyCompactList}\small\item\em deconstructor of the weapon calss \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_weapon_a1a0c6e43de56a14805066fd77b147c53}{shoot}} (int direction, float Height, Vector2 player\+Pos)
+\begin{DoxyCompactList}\small\item\em This makes the weapon shoot. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_weapon_a01077c5db4c296318bbcad631c3a324a}{is\+Active}} ()
+\begin{DoxyCompactList}\small\item\em checks if the weapon is current active \end{DoxyCompactList}\item 
+raylib\+::\+Vector2 \mbox{\hyperlink{class_weapon_a3e6ce160628898864b1bbcd09637f17a}{get\+Position}} ()
+\begin{DoxyCompactList}\small\item\em get\+Position gets the position of the bullet currently \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_weapon_ad8464189363e4b8015997ba5d0919037}\label{class_weapon_ad8464189363e4b8015997ba5d0919037}} 
+void {\bfseries move\+Position} ()
+\begin{DoxyCompactList}\small\item\em move position, moves bullet based on velocity \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_weapon_aba330ea25a7097f508bc66706e0b657e}{get\+Radius}} ()
+\begin{DoxyCompactList}\small\item\em get radius gets the radius of the bullet \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_weapon_a7f770125b7a86f84095eb2f28f668ae7}\label{class_weapon_a7f770125b7a86f84095eb2f28f668ae7}} 
+void {\bfseries set\+Unactive} ()
+\begin{DoxyCompactList}\small\item\em set the weapon to unactive \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_weapon_a19dbeaf6f535354dba50ee1ac3318804}{get\+Damage}} ()
+\begin{DoxyCompactList}\small\item\em get the damage of the weapon \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_weapon_acbc75fad3cebe1e5b76051048afd3c2b}{set\+Mult}} (int i)
+\begin{DoxyCompactList}\small\item\em set multiplier for any type of weapon \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_weapon_a1a6fff9d58cdeade11007e4f7aecdf18}{set\+Radius}} (float i)
+\begin{DoxyCompactList}\small\item\em set radius for any type of weapon \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_weapon_a7975af25ff494ace9a7b091bb8ad83b1}\label{class_weapon_a7975af25ff494ace9a7b091bb8ad83b1}} 
+raylib\+::\+Vector2 {\bfseries position}
+\item 
+\mbox{\Hypertarget{class_weapon_a8691e1f52694df73bc4a26761c23c2b2}\label{class_weapon_a8691e1f52694df73bc4a26761c23c2b2}} 
+raylib\+::\+Vector2 {\bfseries velocity}
+\item 
+\mbox{\Hypertarget{class_weapon_a8bc12bf0ac8e3cdea9c8657ccb6217b5}\label{class_weapon_a8bc12bf0ac8e3cdea9c8657ccb6217b5}} 
+std\+::string {\bfseries name}
+\item 
+\mbox{\Hypertarget{class_weapon_abb463127151d807804c556ddbd767e18}\label{class_weapon_abb463127151d807804c556ddbd767e18}} 
+int {\bfseries damage}
+\item 
+\mbox{\Hypertarget{class_weapon_aeba4a8c1b0632bdeeb8420871a2c2c97}\label{class_weapon_aeba4a8c1b0632bdeeb8420871a2c2c97}} 
+int {\bfseries frequency}
+\item 
+\mbox{\Hypertarget{class_weapon_ab720886b0781d14eb496679ca2622190}\label{class_weapon_ab720886b0781d14eb496679ca2622190}} 
+bool {\bfseries freq\+Cool\+Down}
+\item 
+\mbox{\Hypertarget{class_weapon_a7532ace9b7d4e6a87f8dd6cf90892d53}\label{class_weapon_a7532ace9b7d4e6a87f8dd6cf90892d53}} 
+bool {\bfseries active}
+\item 
+\mbox{\Hypertarget{class_weapon_adc88c2b023ba810243f78c90ce1014a0}\label{class_weapon_adc88c2b023ba810243f78c90ce1014a0}} 
+float {\bfseries radius}
+\item 
+\mbox{\Hypertarget{class_weapon_a30a08c28e1cac9ce31ea24408485370e}\label{class_weapon_a30a08c28e1cac9ce31ea24408485370e}} 
+int {\bfseries distance}
+\item 
+\mbox{\Hypertarget{class_weapon_a84c235d3b0797c2378281b2bdb4da299}\label{class_weapon_a84c235d3b0797c2378281b2bdb4da299}} 
+int {\bfseries Multipier}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header File of the weapon class. 
+
+\begin{DoxyAuthor}{Authors}
+Gurshawn Lehal, Imesh Nimsitha, Gunveer Vilkhu 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_weapon_a42dbc46dd70319a24763992c4ebbd396}\label{class_weapon_a42dbc46dd70319a24763992c4ebbd396}} 
+\index{Weapon@{Weapon}!Weapon@{Weapon}}
+\index{Weapon@{Weapon}!Weapon@{Weapon}}
+\doxysubsubsection{\texorpdfstring{Weapon()}{Weapon()}}
+{\footnotesize\ttfamily Weapon\+::\+Weapon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The weapon class is made to be extended into various melee and ranged weapons it is in charge of holding the weapons properties \+: name, damage, ammunition and frequency. 
+
+\begin{DoxyAuthor}{Authors}
+Gurshawn Lehal, Imesh Nimsitha, Gunveer Vilkhu
+\end{DoxyAuthor}
+The \mbox{\hyperlink{class_weapon}{Weapon}} Constructor creates a generic weapon 
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the weapon \\
+\hline
+{\em damage} & The damage the weapon inflicts minimum 1 \\
+\hline
+{\em max\+Ammo} & if set to 0 or negative integer infinite ammo is assumed \\
+\hline
+{\em frequency} & the frequency of the weapon\textquotesingle{}s attack minimum 0 \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_weapon_a19dbeaf6f535354dba50ee1ac3318804}\label{class_weapon_a19dbeaf6f535354dba50ee1ac3318804}} 
+\index{Weapon@{Weapon}!getDamage@{getDamage}}
+\index{getDamage@{getDamage}!Weapon@{Weapon}}
+\doxysubsubsection{\texorpdfstring{getDamage()}{getDamage()}}
+{\footnotesize\ttfamily int Weapon\+::get\+Damage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get the damage of the weapon 
+
+\begin{DoxyReturn}{Returns}
+int the damage value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_weapon_a3e6ce160628898864b1bbcd09637f17a}\label{class_weapon_a3e6ce160628898864b1bbcd09637f17a}} 
+\index{Weapon@{Weapon}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Weapon@{Weapon}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily raylib\+::\+Vector2 Weapon\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Position gets the position of the bullet currently 
+
+\begin{DoxyReturn}{Returns}
+the vector the position 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_weapon_aba330ea25a7097f508bc66706e0b657e}\label{class_weapon_aba330ea25a7097f508bc66706e0b657e}} 
+\index{Weapon@{Weapon}!getRadius@{getRadius}}
+\index{getRadius@{getRadius}!Weapon@{Weapon}}
+\doxysubsubsection{\texorpdfstring{getRadius()}{getRadius()}}
+{\footnotesize\ttfamily float Weapon\+::get\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get radius gets the radius of the bullet 
+
+\begin{DoxyReturn}{Returns}
+float of the radius 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_weapon_a01077c5db4c296318bbcad631c3a324a}\label{class_weapon_a01077c5db4c296318bbcad631c3a324a}} 
+\index{Weapon@{Weapon}!isActive@{isActive}}
+\index{isActive@{isActive}!Weapon@{Weapon}}
+\doxysubsubsection{\texorpdfstring{isActive()}{isActive()}}
+{\footnotesize\ttfamily bool Weapon\+::is\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+checks if the weapon is current active 
+
+\begin{DoxyReturn}{Returns}
+bool if the weapon is active or not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_weapon_acbc75fad3cebe1e5b76051048afd3c2b}\label{class_weapon_acbc75fad3cebe1e5b76051048afd3c2b}} 
+\index{Weapon@{Weapon}!setMult@{setMult}}
+\index{setMult@{setMult}!Weapon@{Weapon}}
+\doxysubsubsection{\texorpdfstring{setMult()}{setMult()}}
+{\footnotesize\ttfamily void Weapon\+::set\+Mult (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+set multiplier for any type of weapon 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & the multiplier value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_weapon_a1a6fff9d58cdeade11007e4f7aecdf18}\label{class_weapon_a1a6fff9d58cdeade11007e4f7aecdf18}} 
+\index{Weapon@{Weapon}!setRadius@{setRadius}}
+\index{setRadius@{setRadius}!Weapon@{Weapon}}
+\doxysubsubsection{\texorpdfstring{setRadius()}{setRadius()}}
+{\footnotesize\ttfamily void Weapon\+::set\+Radius (\begin{DoxyParamCaption}\item[{float}]{i }\end{DoxyParamCaption})}
+
+
+
+set radius for any type of weapon 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & the radius value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_weapon_a1a0c6e43de56a14805066fd77b147c53}\label{class_weapon_a1a0c6e43de56a14805066fd77b147c53}} 
+\index{Weapon@{Weapon}!shoot@{shoot}}
+\index{shoot@{shoot}!Weapon@{Weapon}}
+\doxysubsubsection{\texorpdfstring{shoot()}{shoot()}}
+{\footnotesize\ttfamily void Weapon\+::shoot (\begin{DoxyParamCaption}\item[{int}]{direction,  }\item[{float}]{Height,  }\item[{Vector2}]{player\+Pos }\end{DoxyParamCaption})}
+
+
+
+This makes the weapon shoot. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & the direction the attack is headed in \\
+\hline
+{\em Height} & the height of the player \\
+\hline
+{\em player\+Pos} & the vector the player \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/weapons/weapon.\+hpp\item 
+src/weapons/weapon.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,142 @@
+\hypertarget{class_game}{}\doxysection{Game Class Reference}
+\label{class_game}\index{Game@{Game}}
+
+
+directive game class holds the game where the game loop occurs setup game mechanics such has inital value of the player and health, among other variables  
+
+
+
+
+{\ttfamily \#include $<$game.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_ad59df6562a58a614fda24622d3715b65}{Game}} ()
+\begin{DoxyCompactList}\small\item\em game class holds the game where the game loop occurs setup game mechanics such has inital value of the player and health, among other variables \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_ae3d112ca6e0e55150d2fdbc704474530}{$\sim$\+Game}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_game}{Game}} deconstructor, deconstructs game object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_ae8638ccdb0ef3bf39a6affa30aa1258f}{start\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Start game method, allows game processes to load in and begin with their inital values, call enemies as well set player, enemy default positions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_a67a8c5c0356c9ad33fac1abc435a3746}{update\+Game}} ()
+\begin{DoxyCompactList}\small\item\em update game loops through game frames to allow for movement to occur and updates to be processed based on player health, if player is dead then game loop breaks \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_ae53fceba1d9bb2aeeaffb4d636ba90e6}{draw\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Draws visual objects on the game board. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_a9d9a79a0f7df3c7e55a3103c04ecbc87}{pause\+Game}} ()
+\begin{DoxyCompactList}\small\item\em pauses game and allows player to choose when to continue \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_a289f610bf56a1935d70497dd45ad509b}\label{class_game_a289f610bf56a1935d70497dd45ad509b}} 
+\mbox{\hyperlink{class_score_manager}{Score\+Manager}} {\bfseries score\+Manager}
+\item 
+\mbox{\Hypertarget{class_game_a6e48721b0532833b99fd5615a3628792}\label{class_game_a6e48721b0532833b99fd5615a3628792}} 
+\mbox{\hyperlink{class_player}{Player}} {\bfseries player}
+\item 
+\mbox{\Hypertarget{class_game_a1e7041f6e1ed9b20a6d130b256047c5d}\label{class_game_a1e7041f6e1ed9b20a6d130b256047c5d}} 
+\mbox{\hyperlink{class_enemy}{Enemy}} {\bfseries enemies} \mbox{[}MAX\+\_\+\+ENEMIES\mbox{]}
+\item 
+\mbox{\Hypertarget{class_game_a4542d57d56bc9ca1d5873a3a89d4aeeb}\label{class_game_a4542d57d56bc9ca1d5873a3a89d4aeeb}} 
+bool {\bfseries game\+On}
+\item 
+\mbox{\Hypertarget{class_game_aae1fd023698ba83537630a0f1c537731}\label{class_game_aae1fd023698ba83537630a0f1c537731}} 
+bool {\bfseries game\+Pause}
+\item 
+\mbox{\Hypertarget{class_game_ac1c11d190c87cc2c687d6a3c32a00433}\label{class_game_ac1c11d190c87cc2c687d6a3c32a00433}} 
+bool {\bfseries active\+Powerup}
+\item 
+\mbox{\Hypertarget{class_game_aed6f5a69221d311ef9cee8c96dc5ef71}\label{class_game_aed6f5a69221d311ef9cee8c96dc5ef71}} 
+float {\bfseries rotation}
+\item 
+\mbox{\Hypertarget{class_game_a6d95ca68fdeb220d8dad5e937a2412a0}\label{class_game_a6d95ca68fdeb220d8dad5e937a2412a0}} 
+float {\bfseries upgradeX}
+\item 
+\mbox{\Hypertarget{class_game_a71844f2eec6015028df11dbbfb9330ee}\label{class_game_a71844f2eec6015028df11dbbfb9330ee}} 
+float {\bfseries upgradeY}
+\item 
+\mbox{\Hypertarget{class_game_a16ad68b9dd512a8fb125246b4bd432f6}\label{class_game_a16ad68b9dd512a8fb125246b4bd432f6}} 
+int {\bfseries big\+Weapon\+Count}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+directive game class holds the game where the game loop occurs setup game mechanics such has inital value of the player and health, among other variables 
+
+\begin{DoxyAuthor}{Authors}
+Gurshawn Lehal, Imesh Nimsitha, Gunveer Vilkhu 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_ad59df6562a58a614fda24622d3715b65}\label{class_game_ad59df6562a58a614fda24622d3715b65}} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+game class holds the game where the game loop occurs setup game mechanics such has inital value of the player and health, among other variables 
+
+\begin{DoxyAuthor}{Authors}
+Gurshawn Lehal, Imesh Nimsitha, Gunveer Vilkhu
+\end{DoxyAuthor}
+\mbox{\hyperlink{class_game}{Game}} constructor, constructs game object \mbox{\Hypertarget{class_game_ae3d112ca6e0e55150d2fdbc704474530}\label{class_game_ae3d112ca6e0e55150d2fdbc704474530}} 
+\index{Game@{Game}!````~Game@{$\sim$Game}}
+\index{````~Game@{$\sim$Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{$\sim$Game()}{~Game()}}
+{\footnotesize\ttfamily Game\+::$\sim$\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_game}{Game}} deconstructor, deconstructs game object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_ae53fceba1d9bb2aeeaffb4d636ba90e6}\label{class_game_ae53fceba1d9bb2aeeaffb4d636ba90e6}} 
+\index{Game@{Game}!drawGame@{drawGame}}
+\index{drawGame@{drawGame}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{drawGame()}{drawGame()}}
+{\footnotesize\ttfamily void Game\+::draw\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws visual objects on the game board. 
+
+\mbox{\Hypertarget{class_game_a9d9a79a0f7df3c7e55a3103c04ecbc87}\label{class_game_a9d9a79a0f7df3c7e55a3103c04ecbc87}} 
+\index{Game@{Game}!pauseGame@{pauseGame}}
+\index{pauseGame@{pauseGame}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{pauseGame()}{pauseGame()}}
+{\footnotesize\ttfamily void Game\+::pause\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+pauses game and allows player to choose when to continue 
+
+\mbox{\Hypertarget{class_game_ae8638ccdb0ef3bf39a6affa30aa1258f}\label{class_game_ae8638ccdb0ef3bf39a6affa30aa1258f}} 
+\index{Game@{Game}!startGame@{startGame}}
+\index{startGame@{startGame}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{startGame()}{startGame()}}
+{\footnotesize\ttfamily void Game\+::start\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Start game method, allows game processes to load in and begin with their inital values, call enemies as well set player, enemy default positions. 
+
+\mbox{\Hypertarget{class_game_a67a8c5c0356c9ad33fac1abc435a3746}\label{class_game_a67a8c5c0356c9ad33fac1abc435a3746}} 
+\index{Game@{Game}!updateGame@{updateGame}}
+\index{updateGame@{updateGame}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{updateGame()}{updateGame()}}
+{\footnotesize\ttfamily void Game\+::update\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+update game loops through game frames to allow for movement to occur and updates to be processed based on player health, if player is dead then game loop breaks 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/game.\+hpp\item 
+src/game.\+cpp\end{DoxyCompactItemize}

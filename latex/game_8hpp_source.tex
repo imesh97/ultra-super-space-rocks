@@ -1,0 +1,43 @@
+\hypertarget{game_8hpp_source}{}\doxysection{game.\+hpp}
+\label{game_8hpp_source}\index{src/game.hpp@{src/game.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ GAME\_H}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ GAME\_H}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <raylib-\/cpp.hpp>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}math.h"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}scoremanager.hpp"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}player.hpp"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}enemies/enemy.hpp"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}constants.hpp"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <cstring>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}soundmanager.hpp"{}}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_game}{Game}}}
+\DoxyCodeLine{00021\ \{}
+\DoxyCodeLine{00022\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_score_manager}{ScoreManager}}\ scoreManager;}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_player}{Player}}\ player;}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_enemy}{Enemy}}\ enemies[MAX\_ENEMIES];}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{bool}\ gameOn;}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{bool}\ gamePause;}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{bool}\ activePowerup;}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{float}\ rotation;}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{float}\ upgradeX;}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{float}\ upgradeY;}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{int}\ bigWeaponCount;}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{class_game_ad59df6562a58a614fda24622d3715b65}{Game}}();}
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_game_ae3d112ca6e0e55150d2fdbc704474530}{\string~Game}}();}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_ae8638ccdb0ef3bf39a6affa30aa1258f}{startGame}}();}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_a67a8c5c0356c9ad33fac1abc435a3746}{updateGame}}();}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_ae53fceba1d9bb2aeeaffb4d636ba90e6}{drawGame}}();}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_a9d9a79a0f7df3c7e55a3103c04ecbc87}{pauseGame}}();}
+\DoxyCodeLine{00041\ \};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

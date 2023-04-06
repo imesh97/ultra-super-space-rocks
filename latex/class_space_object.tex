@@ -1,0 +1,171 @@
+\hypertarget{class_space_object}{}\doxysection{Space\+Object Class Reference}
+\label{class_space_object}\index{SpaceObject@{SpaceObject}}
+
+
+directive spaceobject holds a basic space class for any object that flies in space setups health position and velocity of each object  
+
+
+
+
+{\ttfamily \#include $<$spaceobject.\+hpp$>$}
+
+Inheritance diagram for Space\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_space_object}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_space_object_ada1c7e18d754a1b5d3aed74728eb9ae1}{Space\+Object}} ()
+\begin{DoxyCompactList}\small\item\em spaceobject holds a basic space class for any object that flies in space setups health position and velocity of each object \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_space_object_a60676c3b81a05900eab791eefde444cc}\label{class_space_object_a60676c3b81a05900eab791eefde444cc}} 
+{\bfseries $\sim$\+Space\+Object} ()
+\begin{DoxyCompactList}\small\item\em Deconstructor for spaceobject destroys any unwanted objects. \end{DoxyCompactList}\item 
+raylib\+::\+Vector2 \mbox{\hyperlink{class_space_object_a4cbcbdd7f6c965ca8de1ff132d3396e2}{get\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Get position of spaceobject. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_space_object_abea30fb522c900153cfc16bd69414459}{set\+Position}} (raylib\+::\+Vector2 new\+Pos)
+\begin{DoxyCompactList}\small\item\em Set position of spaceobject set the new position spaceobject. \end{DoxyCompactList}\item 
+raylib\+::\+Vector2 \mbox{\hyperlink{class_space_object_a6bd8e42f754076155862a05815170ba0}{get\+Velocity}} ()
+\begin{DoxyCompactList}\small\item\em Set position of spaceobject set the new position spaceobject. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_space_object_a696fcc3c14034aeecd1be8c127918b43}{set\+Velocity}} (raylib\+::\+Vector2 new\+Vel)
+\begin{DoxyCompactList}\small\item\em Set velocity of spaceobject set the new velocity spaceobject. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_space_object_a7ced2807195c7a870c7bcc821b282e0c}{get\+Health}} ()
+\begin{DoxyCompactList}\small\item\em get health of spaceobject return the health value of the space object \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_space_object_a0387461bb468290ee2ef1bd286fc1aee}{set\+Health}} (int modifier)
+\begin{DoxyCompactList}\small\item\em set health of spaceobject set a new health value of the space object \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_space_object_a56957b149f08c2f255ff21e4f0ffe4fd}\label{class_space_object_a56957b149f08c2f255ff21e4f0ffe4fd}} 
+void {\bfseries move} ()
+\begin{DoxyCompactList}\small\item\em move the spaceobject based on velocity change the space objects position based on the velocity, and update its location \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_space_object_a14d915fef6d25bef2e76d7ef4d629204}\label{class_space_object_a14d915fef6d25bef2e76d7ef4d629204}} 
+raylib\+::\+Vector2 {\bfseries position}
+\item 
+\mbox{\Hypertarget{class_space_object_ad28d4f4b224c0edcdab81f13134623d6}\label{class_space_object_ad28d4f4b224c0edcdab81f13134623d6}} 
+raylib\+::\+Vector2 {\bfseries velocity}
+\item 
+\mbox{\Hypertarget{class_space_object_a071f09b489a140164862480ef828a056}\label{class_space_object_a071f09b489a140164862480ef828a056}} 
+int {\bfseries health}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+directive spaceobject holds a basic space class for any object that flies in space setups health position and velocity of each object 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_space_object_ada1c7e18d754a1b5d3aed74728eb9ae1}\label{class_space_object_ada1c7e18d754a1b5d3aed74728eb9ae1}} 
+\index{SpaceObject@{SpaceObject}!SpaceObject@{SpaceObject}}
+\index{SpaceObject@{SpaceObject}!SpaceObject@{SpaceObject}}
+\doxysubsubsection{\texorpdfstring{SpaceObject()}{SpaceObject()}}
+{\footnotesize\ttfamily Space\+Object\+::\+Space\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+spaceobject holds a basic space class for any object that flies in space setups health position and velocity of each object 
+
+\begin{DoxyAuthor}{Authors}
+Gurshawn Lehal, Imesh Nimsitha, Gunveer Vilkhu
+\end{DoxyAuthor}
+Constructor for spaceobject setups basic positon and velocity and health of any space object 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_space_object_a7ced2807195c7a870c7bcc821b282e0c}\label{class_space_object_a7ced2807195c7a870c7bcc821b282e0c}} 
+\index{SpaceObject@{SpaceObject}!getHealth@{getHealth}}
+\index{getHealth@{getHealth}!SpaceObject@{SpaceObject}}
+\doxysubsubsection{\texorpdfstring{getHealth()}{getHealth()}}
+{\footnotesize\ttfamily int Space\+Object\+::get\+Health (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get health of spaceobject return the health value of the space object 
+
+\begin{DoxyReturn}{Returns}
+returns a int of the health 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_space_object_a4cbcbdd7f6c965ca8de1ff132d3396e2}\label{class_space_object_a4cbcbdd7f6c965ca8de1ff132d3396e2}} 
+\index{SpaceObject@{SpaceObject}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!SpaceObject@{SpaceObject}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily raylib\+::\+Vector2 Space\+Object\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get position of spaceobject. 
+
+\begin{DoxyReturn}{Returns}
+returns a vector of the spaceobject 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_space_object_a6bd8e42f754076155862a05815170ba0}\label{class_space_object_a6bd8e42f754076155862a05815170ba0}} 
+\index{SpaceObject@{SpaceObject}!getVelocity@{getVelocity}}
+\index{getVelocity@{getVelocity}!SpaceObject@{SpaceObject}}
+\doxysubsubsection{\texorpdfstring{getVelocity()}{getVelocity()}}
+{\footnotesize\ttfamily raylib\+::\+Vector2 Space\+Object\+::get\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Set position of spaceobject set the new position spaceobject. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Vector2} & new\+Pos -\/ the vector of the new position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns a vector of the velocity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_space_object_a0387461bb468290ee2ef1bd286fc1aee}\label{class_space_object_a0387461bb468290ee2ef1bd286fc1aee}} 
+\index{SpaceObject@{SpaceObject}!setHealth@{setHealth}}
+\index{setHealth@{setHealth}!SpaceObject@{SpaceObject}}
+\doxysubsubsection{\texorpdfstring{setHealth()}{setHealth()}}
+{\footnotesize\ttfamily void Space\+Object\+::set\+Health (\begin{DoxyParamCaption}\item[{int}]{modifier }\end{DoxyParamCaption})}
+
+
+
+set health of spaceobject set a new health value of the space object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & modifier -\/ value to be updated to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_space_object_abea30fb522c900153cfc16bd69414459}\label{class_space_object_abea30fb522c900153cfc16bd69414459}} 
+\index{SpaceObject@{SpaceObject}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!SpaceObject@{SpaceObject}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily void Space\+Object\+::set\+Position (\begin{DoxyParamCaption}\item[{raylib\+::\+Vector2}]{new\+Pos }\end{DoxyParamCaption})}
+
+
+
+Set position of spaceobject set the new position spaceobject. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Vector2} & new\+Pos -\/ the vector of the new position \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_space_object_a696fcc3c14034aeecd1be8c127918b43}\label{class_space_object_a696fcc3c14034aeecd1be8c127918b43}} 
+\index{SpaceObject@{SpaceObject}!setVelocity@{setVelocity}}
+\index{setVelocity@{setVelocity}!SpaceObject@{SpaceObject}}
+\doxysubsubsection{\texorpdfstring{setVelocity()}{setVelocity()}}
+{\footnotesize\ttfamily void Space\+Object\+::set\+Velocity (\begin{DoxyParamCaption}\item[{raylib\+::\+Vector2}]{new\+Vel }\end{DoxyParamCaption})}
+
+
+
+Set velocity of spaceobject set the new velocity spaceobject. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Vector2} & new\+Vel -\/ the vector of the new velocity \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/spaceobject.\+hpp\item 
+src/spaceobject.\+cpp\end{DoxyCompactItemize}

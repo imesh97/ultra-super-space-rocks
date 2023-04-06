@@ -1,0 +1,64 @@
+\hypertarget{class_sound_manager}{}\doxysection{Sound\+Manager Class Reference}
+\label{class_sound_manager}\index{SoundManager@{SoundManager}}
+
+
+directive soundmanager manges all sound aspects of the game the creation and load of .wav files, as well as playing the sound  
+
+
+
+
+{\ttfamily \#include $<$soundmanager.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sound_manager_a70ffee1bb34993c7ac59edd798d1f9f2}\label{class_sound_manager_a70ffee1bb34993c7ac59edd798d1f9f2}} 
+{\bfseries Sound\+Manager} (std\+::string name, bool is\+Music)
+\item 
+\mbox{\Hypertarget{class_sound_manager_ad5dbf8eab22db48ff8f3db51b02f8938}\label{class_sound_manager_ad5dbf8eab22db48ff8f3db51b02f8938}} 
+{\bfseries $\sim$\+Sound\+Manager} ()
+\begin{DoxyCompactList}\small\item\em deconstructor for the sound manager destroys the object and unloads based on music or sound branch \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sound_manager_a1d2cccf6ce71c59258d0c8c7666832c0}\label{class_sound_manager_a1d2cccf6ce71c59258d0c8c7666832c0}} 
+void {\bfseries play\+Sound} ()
+\begin{DoxyCompactList}\small\item\em play sound branches to the sound effect if type is not music (aka type is sound) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sound_manager_a6265e3f73b56fea0cab813cd0447d310}\label{class_sound_manager_a6265e3f73b56fea0cab813cd0447d310}} 
+void {\bfseries play\+Music} ()
+\begin{DoxyCompactList}\small\item\em play music branches to the sound effect if type is not sound \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sound_manager_a9d8110b2499938dc252f499bea94670b}\label{class_sound_manager_a9d8110b2499938dc252f499bea94670b}} 
+void {\bfseries update\+Music} ()
+\begin{DoxyCompactList}\small\item\em updates stream if not loaded properly pointer to stream changes and allows bytes to be read \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sound_manager_a08c308f67571508eeacee599afdbe404}\label{class_sound_manager_a08c308f67571508eeacee599afdbe404}} 
+void {\bfseries update\+Sound} (std\+::string name, bool is\+Music)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sound_manager_a9dba2c2247232e0039d27bc0ee2501a2}\label{class_sound_manager_a9dba2c2247232e0039d27bc0ee2501a2}} 
+Music {\bfseries music}
+\item 
+\mbox{\Hypertarget{class_sound_manager_a652c2da7130914db5d36ccef3a057f46}\label{class_sound_manager_a652c2da7130914db5d36ccef3a057f46}} 
+Sound {\bfseries sound}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sound_manager_afdcdd2cffdb855484ecb4731baff0e96}\label{class_sound_manager_afdcdd2cffdb855484ecb4731baff0e96}} 
+std\+::string {\bfseries sound\+Name}
+\item 
+\mbox{\Hypertarget{class_sound_manager_a990e23b153b15364746683a409a75208}\label{class_sound_manager_a990e23b153b15364746683a409a75208}} 
+bool {\bfseries is\+Music}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+directive soundmanager manges all sound aspects of the game the creation and load of .wav files, as well as playing the sound 
+
+\begin{DoxyAuthor}{Authors}
+Gurshawn Lehal, Imesh Nimsitha, Gunveer Vilkhu 
+\end{DoxyAuthor}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/soundmanager.\+hpp\item 
+src/soundmanager.\+cpp\end{DoxyCompactItemize}
