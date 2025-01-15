@@ -38,6 +38,7 @@ public:
     void updateGame();
     void drawGame();
     void pauseGame();
+    bool isGameOn();
 };
 
 #endif
