@@ -21,28 +21,104 @@ The player navigates through space by controlling a ship equipped with a ranged 
 
 ## Installation Instructions
 
-For Mac/Linux users:
-`make setup`
+### Desktop Build
 
-For Windows users:
-`mingw32-make setup`
+1. Clone the repository:
 
-To install any missing system-specific dependencies, please view the `docs\InstallingDependencies.md` file.  
-If you are on a Linux machine, install all the corresponding dependencies:
-
+```bash
+git clone https://github.com/imesh97/ultra-super-space-rocks.git
+cd ultra-super-space-rocks
 ```
-sudo apt install libxcursor-dev
-sudo apt install libxinerama-dev
-sudo apt install libxi-dev
-sudo apt install libx11-dev
-sudo apt install libglu1-mesa-dev
-sudo apt install libxrandr-dev
+
+2. Initialize and update the raylib submodule:
+
+```bash
+git submodule init
+git submodule update
+```
+
+3. Build raylib:
+
+```bash
+cd vendor/raylib/src
+make PLATFORM=PLATFORM_DESKTOP
+cd ../../..
+```
+
+### Web Build
+
+1. Install Emscripten:
+
+View instructions here: https://emscripten.org/docs/getting_started/downloads.html
+
+Ensure installation to `~/emsdk`.
+
+2. Ensure Emscripten is installed and activated:
+
+```bash
+cd ~/emsdk
+./emsdk install latest
+./emsdk activate latest
+source ./emsdk_env.sh
 ```
 
 ## Running Instructions
 
-For Mac/Linux users:
-`make`
+### Desktop Build
 
-For Windows users:
-`mingw32-make`
+```bash
+make
+```
+
+The executable will be created based on your platform:
+
+- Windows: Creates `ultrasuperspacerocks.exe`
+- Linux: Creates `ultrasuperspacerocks`
+- macOS: Creates `ultrasuperspacerocks.app`
+
+### Web Build
+
+```bash
+make web
+```
+
+This generates:
+
+- `ultrasuperspacerocks.html` - Main game page
+- `ultrasuperspacerocks.js` - JavaScript support code
+- `ultrasuperspacerocks.wasm` - WebAssembly binary
+- `ultrasuperspacerocks.data` - Game resources
+
+After building for web:
+
+1. Start a local web server:
+
+```bash
+python3 -m http.server 8080
+```
+
+2. Open a web browser and navigate to:
+
+```
+http://localhost:8080/ultrasuperspacerocks.html
+```
+
+Note: Due to browser security restrictions, the game must be served through a web server.
+
+## Build Configuration
+
+Build modes:
+
+- Debug build: `make BUILD_MODE=DEBUG`
+- Release build: `make BUILD_MODE=RELEASE` (default)
+
+Platform options:
+
+- Desktop build: `make PLATFORM=PLATFORM_DESKTOP` (default)
+- Web build: `make PLATFORM=PLATFORM_WEB`
+
+Clean build:
+
+```bash
+make clean   # Removes all build artifacts
+```
