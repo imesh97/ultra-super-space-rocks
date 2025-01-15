@@ -34,6 +34,14 @@ Game::~Game(){};
  */
 void Game::startGame()
 {
+    this->gameOn = true; // reset game state values
+    this->gamePause = false;
+    this->activePowerup = false;
+    this->rotation = 0.0f;
+    this->bigWeaponCount = 0;
+    this->upgradeX = 0.0f;
+    this->upgradeY = 0.0f;
+
     float initHeight = (PLAYER_SIZE / 2) / tanf(20 * DEG2RAD); // calculate initial player values
     raylib::Vector2 initPos = (raylib::Vector2){SCREEN_W / 2, SCREEN_H / 2 - initHeight / 2};
     raylib::Vector2 initVel = (raylib::Vector2){0.0f, 0.0f};
@@ -302,4 +310,9 @@ void Game::drawGame()
 void Game::pauseGame()
 {
     this->gamePause = !gamePause; //update boolean
+}
+
+bool Game::isGameOn()
+{
+    return this->gameOn;
 }
