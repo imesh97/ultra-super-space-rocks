@@ -11,7 +11,40 @@
 #include <string>
 #include "soundmanager.hpp"
 
+#if defined(PLATFORM_WEB)
+    #include <emscripten/emscripten.h>
+    #include <emscripten/html5.h>
+#endif
+
 using namespace std;
+
+Game* game = nullptr;
+SoundManager* musicManager = nullptr;
+
+void RestartGame()
+{
+    if (game != nullptr) {
+        game->startGame();
+    }
+}
+
+void MainLoop()
+{
+    if (game != nullptr)
+    {
+        // Check if game needs to restart
+        if (!game->isGameOn() && (IsKeyPressed(KEY_SPACE) || IsKeyPressed(KEY_ENTER)))
+        {
+            RestartGame();
+        }
+        
+        game->updateGame();
+        if (musicManager != nullptr)
+        {
+            musicManager->updateMusic();
+        }
+    }
+}
 
 /**
  *   @brief      main function, allows game to be setup and run on load
@@ -20,23 +53,28 @@ using namespace std;
 int main()
 {
     raylib::Color textColor(LIGHTGRAY);
-    raylib::Window gameWindow(SCREEN_W, SCREEN_H, "Ultra Super Space Rocks"); //name of window
-    SetTargetFPS(60); //fps 
+    raylib::Window gameWindow(SCREEN_W, SCREEN_H, "Ultra Super Space Rocks");
+    SetTargetFPS(60);
 
     InitAudioDevice();
-    SoundManager music("music.wav", true); //create sound manager
+    musicManager = new SoundManager("music.wav", true);
+    musicManager->playMusic();
 
-    music.playMusic(); //play music
+    game = new Game();
+    game->startGame();
 
-    Game game; //game creation
-    game.startGame();
-    while (!gameWindow.ShouldClose()) //game loop
-    {
-        game.updateGame();
-        music.updateMusic();
-    }
+    #if defined(PLATFORM_WEB)
+        emscripten_set_main_loop(MainLoop, 0, 1);
+    #else
+        while (!gameWindow.ShouldClose())
+        {
+            MainLoop();
+        }
+    #endif
 
-    gameWindow.Close(); // end game
+    delete game;
+    delete musicManager;
+    gameWindow.Close();
 
     return 0;
 }
